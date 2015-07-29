@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jp.go.nict.nsri.sal.regista.fileshare.MainActivity" >
+
+    <Button
+        android:id="@+id/app1_1ut_bt_fupshare"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dl_title"
+        android:layout_below="@+id/dl_title"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/Button_FileUpShare"
+        android:textColor="@color/TextField"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/app1_1ut_bt_downloadfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/app1_1ut_bt_fupshare"
+        android:layout_alignRight="@+id/app1_1ut_bt_fupshare"
+        android:layout_below="@+id/app1_1ut_bt_fupshare"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/Button_Download"
+        android:textColor="@color/TextField"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/dl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/AppName_E"
+        android:textColor="@color/TextField"
+        android:textSize="40dp" />
+
+</RelativeLayout>

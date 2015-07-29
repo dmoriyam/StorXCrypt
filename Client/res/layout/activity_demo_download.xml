@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="jp.go.nict.nsri.sal.regista.fileshare.DemoDownload" >
+
+        <LinearLayout
+        android:id="@+id/layout_dl_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="@string/str_title_dl"
+            android:textColor="@color/TextField"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dl_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="UserID: "
+            android:textColor="@color/TextField"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText_userID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="User001"
+            android:textColor="@color/TextField"
+            android:textSize="24sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dl_line3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Select a File"
+            android:textColor="@color/TextField" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:background="@color/TextField"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="test.txt"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dl_line4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Show File Information"
+            android:textColor="@color/TextField" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/TextField"
+                    android:padding="5dp"
+                    android:text="Filename: test.txt\nFile Size: 512 KB\nUpload Date: 2015-07-07 18:59\nFiletype: TXT\n"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            
+
+        </ScrollView>
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
